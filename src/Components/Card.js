@@ -6,8 +6,7 @@ const Card = ({details}) => {
 
     let [upvotes, setUpvotes] = useState(details.upvotes);    
 
-    const clickHandler = (value) => {
-        console.log('Clicked');
+    const clickHandler = (value) => {        
         setUpvotes(++upvotes);
     }
 

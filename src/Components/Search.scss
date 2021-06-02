@@ -1,0 +1,12 @@
+.search {
+    padding: 16px;
+    width: 90%;
+    display: block;
+    margin: auto;
+    border-radius: 4px;
+
+    @media screen and (min-width: 768px) {        
+        width: 98%;        
+    }    
+}
+

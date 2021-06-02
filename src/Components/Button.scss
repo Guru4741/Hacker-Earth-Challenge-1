@@ -1,0 +1,13 @@
+.btn {
+    padding: 16px 32px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+
+    &--primary {
+        background-color: #4267B2;
+        color: #fff;
+    }
+
+}

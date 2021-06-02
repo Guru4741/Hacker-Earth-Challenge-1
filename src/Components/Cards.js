@@ -1,9 +1,17 @@
 import Card from './Card';
-import './Cards.css';
+import data from './data';
+import './Cards.scss';
 
 const Cards = () => {
+    
+    const renderCards = data.map((each, i) => {
+        return <Card key={i} details={each} />
+    })
+
     return (
-        <Card/>
+        <div className="container">
+            {renderCards}
+        </div>
     )
 }
 

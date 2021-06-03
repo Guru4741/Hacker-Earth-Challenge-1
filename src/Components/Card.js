@@ -1,14 +1,17 @@
-import {useState} from 'react';
+import {useState, useEffect} from 'react';
 import Button from './Button';
 import './Card.scss';
 
 const Card = ({details}) => {
 
-    let [upvotes, setUpvotes] = useState(details.upvotes);    
-
-    const clickHandler = (value) => {        
-        setUpvotes(++upvotes);
+    const [upvotes, setUpvotes] = useState(details.upvotes);    
+    const clickHandler = (value) => {         
+        setUpvotes(++details.upvotes);        
     }
+
+    useEffect(() => {
+        setUpvotes(details.upvotes);
+    },[details])
 
     return (
         <div className="card">
